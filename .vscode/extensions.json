@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "antfu.vite",
+    "antfu.iconify",
+    "antfu.unocss",
+    "antfu.goto-alias",
+    "vue.volar",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "mikestead.dotenv",
+    "golang.go",
+    "vivaxy.vscode-conventional-commits"
+  ]
+}
