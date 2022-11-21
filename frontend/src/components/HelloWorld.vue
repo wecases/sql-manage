@@ -16,6 +16,7 @@ function greet() {
 
 <template>
   <main>
+    <div py-4 />
     <p>
       <em text-sm op75>{{ data.resultText }}</em>
     </p>
