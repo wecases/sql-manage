@@ -7,7 +7,11 @@
     </el-aside>
 
     <el-container>
-      <layout-body />
+      <el-main>
+        <el-scrollbar>
+          <router-view />
+        </el-scrollbar>
+      </el-main>
     </el-container>
   </el-container>
 </template>
