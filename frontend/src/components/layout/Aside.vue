@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const { t } = useI18n()
 const activeNames = $ref([])
 const handleChange = (val: string[]) => {
   // console.log(val)
@@ -53,7 +54,7 @@ const data = $ref(Array.from({ length: 20 }, (item, index) => {
                 </el-button>
                 <el-button plain bg text-xs type="info">
                   <i i-carbon:add-alt />
-                  <span px2>新建连接</span>
+                  <span px2>{{ t('layout.add') }}</span>
                 </el-button>
                 <el-button plain bg text-xs :disabled="activeNames.length === 0" @click="activeNames = []">
                   <div i-bi:arrows-collapse />
