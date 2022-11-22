@@ -1,2 +1,5 @@
-export const isDark = useDark()
+export const isDark = useColorMode({
+  storageKey: 'theme',
+  emitAuto: true,
+})
 export const toggleDark = useToggle(isDark)

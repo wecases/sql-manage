@@ -1,4 +1,3 @@
-language: 简体中文
 layout:
   add: 新建连接
 test:
@@ -12,3 +11,15 @@ test:
   please-enter-your-name-below: 请在下方输入您的姓名👇
   server-result: Server result
   back: 返回
+config:
+  cancel: 取消
+  confirm: 确定
+  language: 语言
+  title: 系统配置
+  theme:
+    light: 正常
+    dark: 黑暗
+    auto: 自动
+    name: 主题
+common:
+  select: 请选择

@@ -1,9 +1,8 @@
 <script setup lang="ts">
-const { t } = useI18n()
-
 const activeNames = $ref([])
 const model = $ref(['mysql', 'redis'])
 const data = ref()
+const showConfig = $ref(false)
 
 const randomData = () => Array.from({ length: 20 }, (item, index) => {
   return {
@@ -23,24 +22,9 @@ const handleChange = (val: string[]) => {
   <main h="screen">
     <el-scrollbar>
       <div>
-        <div>
-          <el-affix :offset="0">
-            <el-main opacity="98">
-              <div flex flex-auto items-center justify-around>
-                <el-button plain text-xs @click="toggleDark()">
-                  <div i-carbon-sun dark:i-carbon-moon />
-                </el-button>
-                <el-button plain bg text-xs type="info">
-                  <i i-carbon:add-alt />
-                  <span px2>{{ t('layout.add') }}</span>
-                </el-button>
-                <el-button plain bg text-xs :disabled="activeNames.length === 0" @click="activeNames = []">
-                  <div i-bi:arrows-collapse />
-                </el-button>
-              </div>
-            </el-main>
-          </el-affix>
-        </div>
+        <el-affix :offset="0">
+          <layout-tool :collapse-status="activeNames.length === 0" @collapse="activeNames = []" @show-config="showConfig = true" />
+        </el-affix>
 
         <el-main pt="0" pb="0">
           <el-collapse v-model="activeNames" @change="handleChange">
@@ -65,6 +49,7 @@ const handleChange = (val: string[]) => {
           </el-collapse>
         </el-main>
       </div>
+      <layout-config v-model="showConfig" @close="showConfig = false" />
     </el-scrollbar>
   </main>
 </template>
