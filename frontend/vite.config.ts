@@ -9,6 +9,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import Unocss from 'unocss/vite'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
+import Modules from 'vite-plugin-use-modules'
 
 export default defineConfig({
   resolve: {
@@ -56,6 +57,11 @@ export default defineConfig({
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
     Unocss(),
+
+    // https://github.com/dishait/vite-plugin-use-modules
+    Modules({
+      target: 'src/plugins', // 这将加载 src/plugins 下的模块，默认为 src/modules
+    }),
 
     // https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n
     VueI18n({
