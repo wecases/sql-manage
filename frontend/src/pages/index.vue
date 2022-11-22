@@ -6,6 +6,9 @@ const go = () => {
   if (name)
     router.push(`/hi/${encodeURIComponent(name)}`)
 }
+ElMessage({
+  message: 'Hello, Vue 3.0 + Vite1',
+})
 </script>
 
 <template>
@@ -49,5 +52,6 @@ const go = () => {
     <div>
       <HelloWorld />
     </div>
+    <el-button>Default</el-button>
   </div>
 </template>

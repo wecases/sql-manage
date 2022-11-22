@@ -45,6 +45,7 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-components
     Components({
       dts: 'runtime/components.d.ts',
+      directoryAsNamespace: true,
       resolvers: [
         ElementPlusResolver(),
       ],
