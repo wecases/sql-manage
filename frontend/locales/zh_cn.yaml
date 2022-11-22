@@ -1,0 +1,14 @@
+language: 简体中文
+layout:
+  add: 新建连接
+test:
+  whats-your-name: 你叫什么名字？
+  go: 开始
+  hello: 你好，欢迎使用 SqlManage
+  name: 名字
+  address: 地址
+  date: 时间
+  hi: 你好
+  please-enter-your-name-below: 请在下方输入您的姓名👇
+  server-result: Server result
+  back: 返回

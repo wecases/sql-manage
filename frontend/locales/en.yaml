@@ -1,3 +1,14 @@
 language: English
 layout:
   add: New Connection
+test:
+  whats-your-name: What's your name?
+  go: Go
+  hello: Hello, welcome to SqlManage
+  address: Address
+  date: Date
+  name: Name
+  hi: Hi
+  server-result: Server result
+  please-enter-your-name-below: Please enter your name below 👇
+  back: Back

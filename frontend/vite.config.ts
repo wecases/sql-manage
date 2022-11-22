@@ -36,8 +36,8 @@ export default defineConfig({
       ],
       dts: 'runtime/auto-imports.d.ts',
       dirs: [
-        './src/composables',
-        './wailsjs/**',
+        'src/composables',
+        'runtime/wailsjs/**/*.js',
       ],
       vueTemplate: true,
       resolvers: [
