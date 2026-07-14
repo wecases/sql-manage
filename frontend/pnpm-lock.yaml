@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/types': ^7.18.10
-  '@vitejs/plugin-vue': ^4.0.0
+  '@vitejs/plugin-vue': ^6.0.0
   typescript: ^5.0.0
   vite: ^4.0.0
   vue: ^3.2.37
@@ -13,7 +13,7 @@ dependencies:
 
 devDependencies:
   '@babel/types': 7.20.2
-  '@vitejs/plugin-vue': 4.2.3_vite@4.3.9+vue@3.2.45
+  '@vitejs/plugin-vue': 6.0.8_vite@4.3.9+vue@3.2.45
   typescript: 5.0.4
   vite: 4.3.9
   vue-tsc: 0.40.13_typescript@5.0.4
@@ -241,13 +241,18 @@ packages:
     dev: true
     optional: true
 
-  /@vitejs/plugin-vue/4.2.3_vite@4.3.9+vue@3.2.45:
-    resolution: {integrity: sha512-R6JDUfiZbJA9cMiguQ7jxALsgiprjBeHL5ikpXfJCH62pPHtI+JdJ5xWj6Ev73yXSlYl86+blXn1kZHQ7uElxw==}
-    engines: {node: ^14.18.0 || >=16.0.0}
+  /@rolldown/pluginutils/1.0.1:
+    resolution: {integrity: sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==}
+    dev: true
+
+  /@vitejs/plugin-vue/6.0.8_vite@4.3.9+vue@3.2.45:
+    resolution: {integrity: sha512-0ZjgOg7oO6farnNGup7yvoM/YXZV84OZxHAwtflItNa/6zzQyVb5LNxyea3FEKEX2XlagIKzrlH7wwxkKgtiew==}
+    engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
-      vite: ^4.0.0
+      vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
       vue: ^3.2.25
     dependencies:
+      '@rolldown/pluginutils': 1.0.1
       vite: 4.3.9
       vue: 3.2.45
     dev: true
